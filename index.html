@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Windows 11</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('bg.jpeg');
+            background-size: cover;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .taskbar {
+            background-color: #f3f3f3;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            z-index: 110;
+            justify-content: center;
+        }
+
+        .startmenu {
+            position: absolute;
+            /* bottom: 50px; */
+            bottom: -655px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease-in;
+        }
+
+        .startmenu img {
+            border-radius: 8px;
+        }
+
+        .right {
+            justify-self: flex-end;
+            position: absolute;
+            right: 0;
+            margin: 6px 0;
+            height: 85%;
+        }
+
+        .icons {
+            margin: 18px 0 0 0;
+            padding: 5px;
+            width: 74px;
+            height: 75px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .icons:hover {
+            background-color: rgba(50, 74, 86, 0.419);
+        }
+
+        .icons p {
+            text-align: center;
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icons">
+        <img src="userfolder.png" width="40px" alt="">
+        <p>Abhinav Anand</p>
+    </div>
+    <div class="icons">
+        <img src="thispc.png" width="53px" alt="">
+        <p>This PC</p>
+    </div>
+    <div class="icons">
+        <img src="recyclebinicon.png" width="53px" alt="">
+        <p>Recycle Bin</p>
+    </div>
+    <div class="icons">
+        <img src="chromeicon.png" width="74px" alt="">
+        <p>Google Chrome</p>
+    </div>
+    <div class="icons">
+        <img src="edgeicon.png" width="43px" alt="">
+        <p>Microsoft Edge</p>
+    </div>
+    <div class="taskbar">
+        <img src="icons.PNG" alt="">
+        <img class="right" src="taskbarright.PNG" alt="">
+    </div>
+    <div class="startmenu">
+        <img src="startmenu.PNG" alt="">
+    </div>
+    <!-- <video autoplay muted id="vid">
+        <source src="video.webm" type="video/webm">
+    </video> -->
+</body>
+<script src="script.js"></script>
+
+</html>
